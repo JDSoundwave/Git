@@ -1,0 +1,58 @@
+// Komendy Gita
+
+git init - inicjalizacja repozytorium
+git status - status repozytorium
+git version - wersja Gita
+
+git add nazwa_pliku - dodawanie do przechowalni konkretnego pliku
+git add . - dodaje wszysztkie pliki do przechowalni
+
+git commit - zapisywanie zmian w repozytorium (otworzy się plik celem dodania komentarza)
+git commit -m "treść komentarza" - zapisywanie zmian w repozytorium wraz z komentarzem
+
+.gitignore - przechowuje listę ignorowanych plików
+
+git clean - usuwa pliki i katalogi, które nie zostały dodane do indexu gita
+
+  -n -->> lista plików do usunięcia
+  -nd -->> lista plików i katalogów do usunięcia (git domyślnie nie usuwa katalogów)
+  -idf -->> tryb interaktywny(i), żeby usunąć katalogi(d) i pliki(f)
+  -xn -->> .DS_Store, środowisko uruchomieniowe
+  
+git reset - usuwanie z przechowalni (przeciwieństwo git add)
+
+  --mixed -->> 
+  --soft -->>
+  --hard -->>
+
+git checkout --nazwa_pliku - usuwa wszystkie zmiany wprowadzone do pliku
+
+  -b <new-branch-name> -->> 'detached HEAD' state
+  master -->> wraca do bieżącej wersji projektu
+
+git rm/mv nazwa_pliku - usuwa/przenosi plik znajdujący się już w indexie gita
+
+git log - historia zmian
+
+  --oneline - historia (skondensowana)
+  
+    --author="Adam" -->> konkretny autor
+    -3 -->> ilość komitów z historii
+    --nazwa_pliku -->> historia konkretnego pliku
+    --patch --nazwa_pliku -->> szczegółowe info, co zostało zmienione
+    --summary -->> skrócone info, co zostało zrobione z danym plikiem
+    --stat -->> statystyki
+    
+  --grep="view" -->> wyszukiwanie konkretnej frazy
+  
+  --author="Adam" -->> konkretny autor
+  
+  --format="" -->> formatowanie
+    
+  --help - pomoc
+  
+git shortlog - historia zmian z podziałem na użytkowników
+
+git revert - odwrócenie zmian wybranego commitu i zapisanie ich jako nowy
+
+Teraz 6/12
